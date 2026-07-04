@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webdev_Finals - Electric Devices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { background-color: #f4f6f9; font-family: 'Segoe UI', sans-serif; }
+        .main-header { background-color: #ffffff; border-bottom: 2px solid #e0e0e0; padding: 15px 20px; }
+        .sidebar { background-color: #ffffff; min-height: calc(100vh - 75px); border-right: 2px solid #e0e0e0; padding: 20px 0; }
+        .sidebar .nav-link { color: #333333; padding: 12px 20px; font-weight: 500; border-bottom: 1px solid #f0f0f0; text-decoration: none; }
+        .sidebar .nav-link:hover { background-color: #f8f9fa; color: #1976d2; }
+        .sidebar .nav-link.active-page { color: #dc3545 !important; font-weight: bold; }
+        .sub-category { padding-left: 35px !important; font-size: 14px; background-color: #fafafa; color: #555!important; }
+        .sub-category.active-sub { color: #dc3545 !important; font-weight: bold; background-color: #fff5f5; }
+        .grid-card { background-color: white; border: 1px solid #e0e0e0; border-radius: 6px; height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        .image-box { width: 80%; height: 120px; background-color: #eaeaea; border-radius: 4px; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <header class="main-header sticky-top">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center gap-2">
+    <a href="index.html" class="d-flex align-items-center text-decoration-none">
+        <img src="logo.png" alt="Lazada Logo" style="height: 60px; width: auto; object-fit: contain;">
+        <span class="logo-text ms-2"></span>
+    </a>
+</div>
+            <div class="w-50 mx-4">
+                <div class="input-group"><input type="text" class="form-control" placeholder="Search in Lazada..."><button class="btn btn-outline-secondary"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+            </div>
+            <div class="d-flex align-items-center gap-4"><a href="#" class="text-dark position-relative"><i class="fa-solid fa-cart-shopping fs-4"></i></a><button class="btn btn-outline-dark px-4">Profile</button></div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar collapse shadow-sm">
+                <div class="position-sticky flex-column d-flex">
+                    <a class="nav-link" href="index.html">Homepage</a>
+                    <a class="nav-link" href="about.html">About Page</a>
+                    <a class="nav-link active-page d-flex justify-content-between align-items-center" href="#">Categories <span>▲</span></a>
+                    <a class="nav-link sub-category active-sub" href="category-electric.html">Electric Devices</a>
+                    <a class="nav-link sub-category" href="category-home.html">Home & Living</a>
+                    <a class="nav-link sub-category" href="category-fashion.html">Fashion & Accessories</a>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-4">
+                <h2 class="text-center mb-5 fw-normal text-dark">Electric Device</h2>
+                
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                    <div class="col"><div class="grid-card shadow-sm"><div class="image-box"></div><span class="text-muted small">Device Item</span></div></div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+</html>
